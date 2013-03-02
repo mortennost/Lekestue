@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{BED50932-F90F-AF57-C2B6-76C271F04066}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_0_1;UNITY_4_0;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\RotateDiscoBall.cs" />
+     <Compile Include="Assets\Scripts\AI\Creep\AIStateCreepAttack.cs" />
+     <Compile Include="Assets\Scripts\AI\Creep\AIStateCreepChase.cs" />
+     <Compile Include="Assets\Scripts\AI\Creep\AIStateCreepDead.cs" />
+     <Compile Include="Assets\Scripts\AI\Creep\AIStateCreepIdle.cs" />
+     <Compile Include="Assets\Scripts\AI\CreepStateManager.cs" />
+     <Compile Include="Assets\Scripts\AI\GatheringManager.cs" />
+     <Compile Include="Assets\Scripts\AI\Structure\AIStateDestroyed.cs" />
+     <Compile Include="Assets\Scripts\AI\Structure\AIStateStructureCreation.cs" />
+     <Compile Include="Assets\Scripts\AI\Structure\AIStateStructureDestroyed.cs" />
+     <Compile Include="Assets\Scripts\AI\Structure\AIStateStructureOperational.cs" />
+     <Compile Include="Assets\Scripts\AI\Structure\AIStateStructurePlacement.cs" />
+     <Compile Include="Assets\Scripts\AI\StructureStateManager.cs" />
+     <Compile Include="Assets\Scripts\AI\Turret\AIStateTurretAttack.cs" />
+     <Compile Include="Assets\Scripts\AI\Turret\AIStateTurretIdle.cs" />
+     <Compile Include="Assets\Scripts\AI\TurretStateManager.cs" />
+     <Compile Include="Assets\Scripts\Buildings\BillboardBackgroundScript.cs" />
+     <Compile Include="Assets\Scripts\Buildings\BillboardScript.cs" />
+     <Compile Include="Assets\Scripts\Buildings\HighlightPositionScript.cs" />
+     <Compile Include="Assets\Scripts\Buildings\InstantiateStructure.cs" />
+     <Compile Include="Assets\Scripts\Buildings\MaterialScript.cs" />
+     <Compile Include="Assets\Scripts\Buildings\PlayerhouseScript.cs" />
+     <Compile Include="Assets\Scripts\Buildings\StructureScript.cs" />
+     <Compile Include="Assets\Scripts\Buildings\SubMenuScript.cs" />
+     <Compile Include="Assets\Scripts\Camera\LookAtCameraOnly.cs" />
+     <Compile Include="Assets\Scripts\Components\AOEAttack.cs" />
+     <Compile Include="Assets\Scripts\Components\Attack.cs" />
+     <Compile Include="Assets\Scripts\Components\CriticalAttack.cs" />
+     <Compile Include="Assets\Scripts\Components\CriticalHit.cs" />
+     <Compile Include="Assets\Scripts\Components\Health.cs" />
+     <Compile Include="Assets\Scripts\Components\Move.cs" />
+     <Compile Include="Assets\Scripts\Components\Resource\FoodGatherer.cs" />
+     <Compile Include="Assets\Scripts\Components\Resource\WaterGatherer.cs" />
+     <Compile Include="Assets\Scripts\Components\SlowAttack.cs" />
+     <Compile Include="Assets\Scripts\Components\Target.cs" />
+     <Compile Include="Assets\Scripts\GUI\GUI #2\CancelBuildingAction.cs" />
+     <Compile Include="Assets\Scripts\GUI\GUI #2\CloseShopAction.cs" />
+     <Compile Include="Assets\Scripts\GUI\GUI #2\DestroyStructureAction.cs" />
+     <Compile Include="Assets\Scripts\GUI\GUI #2\EnableBuildState.cs" />
+     <Compile Include="Assets\Scripts\GUI\GUI #2\EnableMenuState.cs" />
+     <Compile Include="Assets\Scripts\GUI\GUI #2\HarvestAction.cs" />
+     <Compile Include="Assets\Scripts\GUI\GUI #2\NotificationScript.cs" />
+     <Compile Include="Assets\Scripts\GUI\GUI #2\PlaceBuildingAction.cs" />
+     <Compile Include="Assets\Scripts\GUI\GUI #2\SpawnCreepAction.cs" />
+     <Compile Include="Assets\Scripts\GUI\GUI #2\UpdateFoodLabel.cs" />
+     <Compile Include="Assets\Scripts\GUI\GUI #2\UpdateScrapLabel.cs" />
+     <Compile Include="Assets\Scripts\GUI\GUI #2\UpdateWaterLabel.cs" />
+     <Compile Include="Assets\Scripts\GUI\GUI #2\UpdateWorkersLabel.cs" />
+     <Compile Include="Assets\Scripts\GUI\GUI #2\UpdateXPFill.cs" />
+     <Compile Include="Assets\Scripts\GUI\GUI #2\UpdateXPLevel.cs" />
+     <Compile Include="Assets\Scripts\GameState Manager\BuildState.cs" />
+     <Compile Include="Assets\Scripts\GameState Manager\CreepSpawnManager.cs" />
+     <Compile Include="Assets\Scripts\GameState Manager\GameStateManager.cs" />
+     <Compile Include="Assets\Scripts\GameState Manager\MenuState.cs" />
+     <Compile Include="Assets\Scripts\GameState Manager\PlayState.cs" />
+     <Compile Include="Assets\Scripts\GameState Manager\State.cs" />
+     <Compile Include="Assets\Scripts\GameState Manager\StateManager.cs" />
+     <Compile Include="Assets\Scripts\Input Manager\BuildInputLayer.cs" />
+     <Compile Include="Assets\Scripts\Input Manager\GlobalInputLayer.cs" />
+     <Compile Include="Assets\Scripts\Input Manager\InputHandler.cs" />
+     <Compile Include="Assets\Scripts\Input Manager\InputLayer.cs" />
+     <Compile Include="Assets\Scripts\Input Manager\MenuInputHandler.cs" />
+     <Compile Include="Assets\Scripts\Input Manager\MenuInputLayer.cs" />
+     <Compile Include="Assets\Scripts\Input Manager\PlayInputLayer.cs" />
+     <Compile Include="Assets\Scripts\Input Manager\TutorialInputLayer.cs" />
+     <Compile Include="Assets\Scripts\Other\BORRUDURRRR.cs" />
+     <Compile Include="Assets\Scripts\Other\CameraScript.cs" />
+     <Compile Include="Assets\Scripts\Other\CreepSpawnScript.cs" />
+     <Compile Include="Assets\Scripts\Other\GraphEdge.cs" />
+     <Compile Include="Assets\Scripts\Other\Grid.cs" />
+     <Compile Include="Assets\Scripts\Other\GridEdge.cs" />
+     <Compile Include="Assets\Scripts\Other\GridNode.cs" />
+     <Compile Include="Assets\Scripts\Other\GridScript.cs" />
+     <Compile Include="Assets\Scripts\Other\GridsnapperScript.cs" />
+     <Compile Include="Assets\Scripts\Other\MoveToTarget.cs" />
+     <Compile Include="Assets\Scripts\Other\Player.cs" />
+     <Compile Include="Assets\Scripts\Other\ResourceManagerScript.cs" />
+     <Compile Include="Assets\Scripts\Other\RotateScript.cs" />
+     <Compile Include="Assets\Scripts\Pathfinding\DirectedGraph.cs" />
+     <Compile Include="Assets\Scripts\Pathfinding\Vertex.cs" />
+     <Compile Include="Assets\Scripts\Status Effect\SlowEffect.cs" />
+     <Compile Include="Assets\Scripts\Status Effect\StatusEffectManager.cs" />
+     <Compile Include="Assets\iGUI\SampleCustomElements\iGUIMyButton.cs" />
+     <Compile Include="Assets\iGUI\SampleCustomElements\iGUIMyContainer.cs" />
+     <Compile Include="Assets\iGUI\SampleCustomElements\iGUIMyTextfield.cs" />
+     <Compile Include="Assets\iGUI\iGUICode_GUI_mockup2.cs" />
+     <Compile Include="Assets\iGUI\iGUICode_GUI_test.cs" />
+     <Compile Include="Assets\iTween\Plugins\iTween.cs" />
+     <Compile Include="Assets\iTween\Plugins\iTweenHinting.cs" />
+     <Compile Include="Assets\iTween\Sample\MoveSample.cs" />
+     <Compile Include="Assets\iTween\Sample\RotateSample.cs" />
+     <Compile Include="Assets\iTween\Sample\SampleInfo.cs" />
+     <Compile Include="Assets\iTween\Sample\iTweenTest.cs" />
+     <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
+     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
+     <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularSmooth.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
+     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
+     <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
+ <Reference Include="iGUI">
+ <HintPath>Assets\iGUI\Runtime\iGUI.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{497EB3D4-7649-1B08-A5BB-0098D4E96BAC}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{EE264EC2-889A-E240-9D90-E75C8DDEA3A4}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
